@@ -1,8 +1,10 @@
 # Amazon Vine Analysis
 
-## Overview of the analysis: Explain the purpose of this analysis.
+## Overview of the analysis: 
+Using your knowledge of the cloud ETL process, you’ll create an AWS RDS database with tables in pgAdmin, pick a dataset from the Amazon Review datasets, and extract the dataset into a DataFrame. You'll transform the DataFrame into four separate DataFrames that match the table schema in pgAdmin. Then, you'll upload the transformed data into the appropriate tables and run queries in pgAdmin to confirm that the data has been uploaded.
+You’ll use PySpark to determine if there is any bias toward favorable reviews from Vine members in your dataset. 
 
-## Results: Using bulleted lists and images of DataFrames as support, address the following questions:
+## Results: 
 
 ### - How many Vine reviews and non-Vine reviews were there?
 There were 162 total Vine reviews and 35,606 total non-Vine reviews.
@@ -21,4 +23,6 @@ Image of DataFrame for all Vine review data and the PySpark code to determine to
 39% of Vine reviews were 5 stars. 55% of non-Vine reviews were 5 stars.
 
 
-## Summary: In your summary, state if there is any positivity bias for reviews in the Vine program. Use the results of your analysis to support your statement. Then, provide one additional analysis that you could do with the dataset to support your statement.
+## Summary: 
+After analyzing the results, there is no positivity bias in the Vine program. Only 38% of reviews were 5 stars, which is an accepted amount. 
+One additional analysis that we could complete with this dataset is compare which products got the highest reviews and if they were consistent between the Vine and non-Vine programs.
